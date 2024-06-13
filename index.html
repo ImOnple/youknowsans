@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>언더테일 아시는구나!</title>
+</head>
+<style>
+    ::-webkit-scrollbar {
+    display: none;
+    }
+    html { 
+    overflow: hidden;
+    text-align: center;
+    background: #000;
+    }
+    p1 {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        display: inline-block;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-size: 3.2vmax;
+        animation: jeommyeol 0.05s linear infinite;
+    }
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vmax;
+        animation: sans 0.05s linear infinite;
+    }
+    .button {
+        position: absolute;
+        background-color:#000;
+        border: none;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vmax;
+        height: 100vmax;
+    }
+    .text {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:#fff;
+        opacity: 0%;
+        animation: fade 0.7s forwards;
+        animation-delay: 1s;
+        pointer-events : none;
+    }
+    @keyframes sans {
+        0% {
+            width: 50vmax;
+        }
+        50% {
+            width: 10vmax;
+        }
+        100% {
+            width: 50vmax;
+        }
+    }
+    @keyframes jeommyeol {
+        0% {
+            color: #fff;
+        }
+        50% {
+            color: #000;
+        }
+        100% {
+            color: #fff;
+        }
+    }
+    @keyframes fade {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+</style>
+<body>
+    <button class="button" onclick="audioo()"></button>
+    <p2 class="text">click anywhere<br>아무 곳이나 클릭하세요</p2>
+    <img src="saness.gif">
+    <p1>VISIT HTTPS://ONLIY.MCV.KR</p1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script src="index.js"></script>
+</body>
+</html>
